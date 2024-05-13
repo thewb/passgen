@@ -1,0 +1,39 @@
+{
+  "configurations" : [
+    {
+      "id" : "AA98ED88-9906-44E1-BED0-B73D279782CE",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:pass-gen.xcodeproj",
+      "identifier" : "29B6BA402BF286B300F71BF3",
+      "name" : "pass-gen"
+    }
+  },
+  "testTargets" : [
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:pass-gen.xcodeproj",
+        "identifier" : "29B6BA512BF286B600F71BF3",
+        "name" : "pass-genTests"
+      }
+    },
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:pass-gen.xcodeproj",
+        "identifier" : "29B6BA5B2BF286B600F71BF3",
+        "name" : "pass-genUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
