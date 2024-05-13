@@ -1,5 +1,5 @@
 ### passgen
 
-passgen is a swift password generator that creates a 32 character password and places it in the macos clipboard
+passgen is a password generator written in swift that creates a 32 character passwords and places each one in the macos clipboard
 
 * build with xcode 
