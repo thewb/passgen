@@ -12,6 +12,8 @@ struct pass_genApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .frame(width: 154, height: 134)
+                .background(Image("cat"))
         }
     }
 }

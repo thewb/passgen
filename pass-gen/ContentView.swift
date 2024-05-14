@@ -10,28 +10,28 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("password is in clipboard")
-                .frame(width: 214, height: 25)
-                .fixedSize(horizontal: true, vertical: true)
-                .cornerRadius(10)
-                .multilineTextAlignment(.center)
-                .onAppear {
-                    ClipboardManager.doit()
-                }
             Button(action: {
                 ClipboardManager.doit()
             }) {
-                Text("New Password")
-            }       .cornerRadius(8)
+                Text("new password")
+            }   .cornerRadius(8)
+                .background(Color.black).opacity(0.8)
+                                
             Button(action: {
-                exit(0)
+                ClipboardManager._exit()
             }) {
-                Text("EXIT")
-            }       .cornerRadius(8)
+                Text("exit")
+            }   .cornerRadius(8)
+                .background(Color.black).opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
+            
+            Button(action: {
+                ClipboardManager._clear()
+            }) {
+                Text("clear")
+            }   .cornerRadius(8)
+                .background(Color.black).opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
         }
     }
 }
 
-#Preview {
-    ContentView()
-}
+

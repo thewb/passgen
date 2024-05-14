@@ -17,8 +17,8 @@ class ClipboardManager {
     }
     
     static func generate() -> String {
-        let charset: [Character] = (32...126).compactMap { Character(UnicodeScalar($0)) }
-        let passw: [Character] = ((0..<32).map{ _ in charset.randomElement()! })
+        let charset: [Character] = (32...126).compactMap{Character(UnicodeScalar($0))}
+        let passw: [Character] = ((0..<32).map{_ in charset.randomElement()!})
         let rv = String(passw)
         return rv
     }
@@ -28,4 +28,14 @@ class ClipboardManager {
         copyToClipboard(text: pword)
     }
     
+    static func _exit() {
+        let pasteboard = NSPasteboard.general
+        pasteboard.clearContents()
+        exit(0)
+    }
+    
+    static func _clear() {
+        let pasteboard = NSPasteboard.general
+        pasteboard.clearContents()
+    }
 }
