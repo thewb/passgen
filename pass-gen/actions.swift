@@ -9,7 +9,6 @@ import Foundation
 import AppKit
 
 class ClipboardManager {
-    
     static func copyToClipboard(text: String) {
         let pasteboard = NSPasteboard.general
         pasteboard.clearContents()

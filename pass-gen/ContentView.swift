@@ -13,7 +13,7 @@ struct ContentView: View {
             Button(action: {
                 ClipboardManager.doit()
             }) {
-                Text("new password")
+                Text("new")
             }   .cornerRadius(8)
                 .background(Color.black).opacity(0.8)
                                 
